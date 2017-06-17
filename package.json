@@ -1,6 +1,6 @@
 {
   "name": "angular2-electron-ci",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "main": "main.js",
   "license": "MIT",
   "email": "example@example.org",
@@ -15,7 +15,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "pack": "build --dir",
-    "dist": "build"
+    "dist": "copy main.js dist/ && build --projectDir dist/"
   },
   "build": {
     "files": [
@@ -51,6 +51,7 @@
     "@types/node": "~6.0.60",
     "automatic-release": "1.0.5",
     "codelyzer": "~2.0.0",
+    "copy": "0.3.0",
     "electron": "1.6.11",
     "electron-reload": "1.2.1",
     "jasmine-core": "~2.5.2",

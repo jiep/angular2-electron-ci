@@ -1,9 +1,6 @@
 language: node_js
 node_js:
 - '7'
-branches:
-  only:
-  - master
 addons:
   apt:
     packages:
@@ -15,6 +12,7 @@ install:
 before_script:
 - npm install -g @angular/cli
 - npm install -g electron-builder
+- npm install -g copy
 - npm install
 script:
 - ng build --prod --aot
