@@ -9,12 +9,6 @@ addons:
     packages:
     - xvfb
     - tree
-before_install:
-  - if [ "$TRAVIS_BRANCH" == "master" ]; then
-      git clone "https://github.com/$TRAVIS_REPO_SLUG.git" "$TRAVIS_REPO_SLUG";
-      cd "$TRAVIS_REPO_SLUG";
-      git checkout -qf "$TRAVIS_COMMIT";
-    fi
 install:
 - export DISPLAY=':99.0'
 - Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
