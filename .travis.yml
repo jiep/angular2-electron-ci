@@ -8,6 +8,7 @@ addons:
   apt:
     packages:
     - xvfb
+    - zip
 install:
 - export DISPLAY=':99.0'
 - Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
@@ -18,6 +19,7 @@ before_script:
 script:
 - ng build --prod --aot
 - npm run dist
+- zip -r dist.zip dist/
 cache:
   directories:
   - node_modules
@@ -27,7 +29,9 @@ deploy:
   api_key:
     secure: LVp9R/mU3HM7ER0CrNvbUb3+Rw2mJrHbHbjPSJsJ8qgdFnvmujC/OipRyeSUdGfNH3LWoFTRlJDVDHAPLahro++ssXbyVfmESRYbZvRrBA1v3sTDKIFJursFkt7ftOYHHdzL/T1iCRibZO9jRTK0ft8TYkWt9UrRz9Sw0g2whEe57koFci27mRqhHHLuI69jMmtQWeJn8fCisU9cS7PKZ68Hb0fJkSyZ5DKHcSGkIOnoF8+n160ojVDIdgBV3r3q8XfpG7iWnas/MZTwl2OvSpA+J7eBCc0EtuATGs7X/wMJjz85Wp4zqsIGGdc530DKmLzVIybPhsE4FhpSg+IBSdxU8VNgiKhf4qfKwPU1frDWnWW1h+URNWGcr6/DZ0DlhM0ZtdJCC0xOGpE+fQ6kJsYYRBN78vEciB9y9nh6xtdyI0GJyEj9OjTstUq7Jex7ymDqXCzbXARFAuNukmgKXz98cmHezA2wij91DDH5bl/8Xn19KBD7aid9d698rImd1pHwzf+vNgRo4t44wXpp+mLDT4d+aB0ysmss5BNP8Lj802acwsZVAiDWTPpDmyQ68cTKgQF7uz2tl2QVAjUL8MDZBiC4WzxttY6K7hcfTKMYGZRlx1VIdH77QhMhY/nmfAkVY5QhUPP4MOU+fqwHFHek+gxOZMqRThtf4i90GDs=
   file_glob: true
-  file: dist/*.deb
+  file:
+    - dist/*.deb
+    - dist.zip
   on:
     tags: false
     all_branches: false
