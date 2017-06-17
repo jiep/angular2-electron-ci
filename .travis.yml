@@ -21,13 +21,6 @@ script:
   - ng build --prod
   - npm run dist
   - tree dist/
-before_deploy:
-  - git config --global user.email "builds@travis-ci.com"
-  - git config --global user.name "Travis CI"
-  - export GIT_TAG=$TRAVIS_BRANCH-0.1.$TRAVIS_BUILD_NUMBER
-  - git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
-  - git push -q https://$TAGPERM@github.com/jiep/angular2-electron-ci --tags
-  - ls -R
 deploy:
   skip_cleanup: true
   provider: releases
@@ -35,5 +28,5 @@ deploy:
   file:
     - "dist/*.deb"
   on:
-    tags: false
+    tags: true
     all_branches: false
