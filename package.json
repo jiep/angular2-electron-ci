@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "main": "main.js",
   "license": "MIT",
+  "description": "Una prueba",
+  "author": "John Doe",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -10,7 +12,12 @@
     "electron": "electron .",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "build": {
+    "appId": "com.example.angular2-electron-ci"
   },
   "private": true,
   "dependencies": {
