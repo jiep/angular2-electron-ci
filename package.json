@@ -16,12 +16,12 @@
     "e2e": "ng e2e",
     "release": "build"
   },
-  "directories": {
-    "output": "release",
-    "app": "app",
-    "buildResources": "build"
-  },
   "build": {
+    "directories": {
+      "output": "release",
+      "app": "app",
+      "buildResources": "build"
+    },
     "linux": {
       "target": [
         "AppImage",
