@@ -1,6 +1,6 @@
 {
   "name": "angular2-electron-ci",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "main": "main.js",
   "license": "MIT",
   "email": "example@example.org",
@@ -15,10 +15,13 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "pack": "build --dir",
-    "release": "copy main.js package.json dist/ && build --projectDir dist/"
+    "release": "build"
   },
   "build": {
-    "asar":false,
+    "files": [
+      "dist/*",
+      "main.js"
+    ],
     "linux": {
       "target": [
         "AppImage",
