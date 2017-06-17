@@ -1,11 +1,9 @@
+os:
+  - linux
+  - osx
 language: node_js
 node_js:
 - '7'
-addons:
-  apt:
-    packages:
-    - xvfb
-    - zip
 branches:
   only:
   - master
@@ -20,7 +18,6 @@ before_script:
 script:
 - ng build --prod --aot
 - npm run release
-- zip -r dist.zip dist/
 cache:
   directories:
   - node_modules
