@@ -18,6 +18,7 @@
     "dist": "copy main.js package.json dist/ && build --projectDir dist/"
   },
   "build": {
+    "asar":false
     "linux": {
       "target": [
         "AppImage",
