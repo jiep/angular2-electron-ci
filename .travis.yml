@@ -14,7 +14,8 @@ before_script:
 - npm install
 script:
 - npm run build
-- copy main.js package.json app/
+- copy main.js app/
+- ls -la app/
 - npm run release
 cache:
   directories:
