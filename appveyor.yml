@@ -12,7 +12,6 @@ init:
 install:
   - ps: Install-Product node 7 x64
   - git reset --hard HEAD
-  - npm install -g npm
   - npm install electron-builder
   - npm install -g @angular/cli
   - npm install
