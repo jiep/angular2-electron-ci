@@ -8,6 +8,7 @@ addons:
   apt:
     packages:
       - xvfb
+      - tree
 install:
   - export DISPLAY=':99.0'
   - Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
@@ -19,4 +20,4 @@ before_script:
 script:
   - ng build --prod
   - npm run dist
-  - ls -la dist/
+  - tree dist/
