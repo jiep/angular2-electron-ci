@@ -1,6 +1,6 @@
 {
   "name": "angular2-electron-ci",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "main": "main.js",
   "license": "MIT",
   "email": "example@example.org",
@@ -15,6 +15,11 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "release": "build"
+  },
+  "directories": {
+    "output": "release",
+    "app": "app",
+    "buildResources": "build"
   },
   "build": {
     "linux": {
