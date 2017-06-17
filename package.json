@@ -18,6 +18,10 @@
     "dist": "build"
   },
   "build": {
+    "files": [
+      "dist/*",
+      "main.js"
+    ],
     "linux": {
       "target": [
         "AppImage",
