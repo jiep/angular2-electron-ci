@@ -29,13 +29,6 @@ script:
 cache:
   directories:
   - node_modules
-before_deploy:
-  - git config --global user.name "jiep" # Replace!
-  - git config --global user.email "jiep12345@hotmail.com" # Replace!
-  - git config credential.helper "store --file=.git/credentials"
-  - echo "https://$GH_TOKEN:@github.com" > .git/credentials
-  - git checkout master
-  - npm run automatic-release # Here happens the magic
 deploy:
   skip_cleanup: true
   provider: releases
