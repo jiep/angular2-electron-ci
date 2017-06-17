@@ -19,7 +19,7 @@ before_script:
 - npm install
 script:
 - ng build --prod --aot
-- npm run dist
+- npm run release
 - zip -r dist.zip dist/
 cache:
   directories:
