@@ -18,10 +18,6 @@
     "dist": "copy main.js dist/ && build --projectDir dist/"
   },
   "build": {
-    "files": [
-      "dist/*",
-      "main.js"
-    ],
     "linux": {
       "target": [
         "AppImage",
