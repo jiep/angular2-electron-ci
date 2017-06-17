@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "main": "main.js",
   "license": "MIT",
+  "email": "example@example.org"
   "description": "Una prueba de Angular 2 y Electron",
   "author": "John Doe",
   "scripts": {
