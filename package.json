@@ -1,6 +1,6 @@
 {
   "name": "angular2-electron-ci",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "main": "main.js",
   "license": "MIT",
   "email": "example@example.org",
