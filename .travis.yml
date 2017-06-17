@@ -26,7 +26,7 @@ before_deploy:
   - git config --global user.name "Travis CI"
   - export GIT_TAG=$TRAVIS_BRANCH-0.1.$TRAVIS_BUILD_NUMBER
   - git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
-  - git push -q https://$TAGPERM@github.com/jiep/angular2-electron-cli --tags
+  - git push -q https://$TAGPERM@github.com/jiep/angular2-electron-ci --tags
   - ls -R
 deploy:
   skip_cleanup: true
