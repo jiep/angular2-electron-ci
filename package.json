@@ -1,6 +1,6 @@
 {
   "name": "angular2-electron-ci",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "main": "main.js",
   "license": "MIT",
   "email": "example@example.org",
@@ -25,6 +25,14 @@
       "target": [
         "AppImage",
         "deb"
+      ]
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "nsis-web",
+        "portable",
+        "squirrel"
       ]
     }
   },
