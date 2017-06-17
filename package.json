@@ -5,7 +5,7 @@
   "license": "MIT",
   "email": "example@example.org",
   "description": "Una prueba de Angular 2 y Electron",
-  "author": "John Doe",
+  "author": "John Doe <example@example.org>",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
