@@ -17,7 +17,12 @@
     "dist": "build"
   },
   "build": {
-    "appId": "com.example.angular2-electron-ci"
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    }
   },
   "private": true,
   "dependencies": {
