@@ -31,6 +31,6 @@ deploy:
   file_glob: true
   file: dist/*.deb
   on:
-    tags: true
+    tags: false
     all_branches: false
     repo: jiep/angular2-electron-ci
