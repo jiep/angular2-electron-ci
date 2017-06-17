@@ -21,6 +21,7 @@ build_script:
   - node --version
   - npm --version
   - npm run build
+  - copy main.js package.json app/
   - npm run release
 
 test: off
