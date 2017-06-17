@@ -45,6 +45,7 @@
     "@angular/compiler-cli": "^4.0.0",
     "@types/jasmine": "2.5.38",
     "@types/node": "~6.0.60",
+    "automatic-release": "1.0.5",
     "codelyzer": "~2.0.0",
     "electron": "1.6.11",
     "electron-reload": "1.2.1",
