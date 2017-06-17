@@ -15,7 +15,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "pack": "build --dir",
-    "dist": "copy main.js dist/ && build --projectDir dist/"
+    "dist": "copy main.js package.json dist/ && build --projectDir dist/"
   },
   "build": {
     "linux": {
