@@ -14,12 +14,13 @@ install:
   - git reset --hard HEAD
   - npm install electron-builder
   - npm install -g @angular/cli
+  - npm install -g copy
   - npm install
 
 build_script:
   - node --version
   - npm --version
-  - ng build --prod --aot
+  - npm run build
   - npm run release
 
 test: off

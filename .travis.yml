@@ -13,7 +13,7 @@ before_script:
 - npm install -g copy
 - npm install
 script:
-- ng build --prod --aot
+- npm run build
 - npm run release
 cache:
   directories:
