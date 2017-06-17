@@ -9,7 +9,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --aot --output-path app/ && copy main.js package.json app/",
+    "build": "ng build --prod --aot --output-path app/",
     "electron": "electron .",
     "test": "ng test",
     "lint": "ng lint",
