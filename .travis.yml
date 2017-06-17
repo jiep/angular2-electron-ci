@@ -15,8 +15,9 @@ before_script:
 script:
 - npm run build
 - copy main.js app/
-- ls -la app/
 - npm run release
+- ls -la dist/
+
 cache:
   directories:
   - node_modules
