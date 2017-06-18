@@ -9,17 +9,17 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --aot --output-path app/",
+    "build": "ng build --prod --aot",
     "electron": "electron .",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "release": "build --project app/"
+    "release": "electron-packager dist App --out=release --asar=true --overwrit && build"
   },
   "build": {
     "directories": {
       "output": "release",
-      "app": "app",
+      "app": "dist",
       "buildResources": "build"
     },
     "linux": {

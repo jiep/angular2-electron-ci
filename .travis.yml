@@ -14,9 +14,8 @@ before_script:
 - npm install
 script:
 - npm run build
-- copy main.js package-2.json app/
-- mv app/package-2.json app/package.json
-- ls -la app/
+- copy main.js dist/
+- ls -la dist/
 - npm run release
 
 
