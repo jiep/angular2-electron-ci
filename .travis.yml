@@ -15,7 +15,7 @@ before_script:
 - npm install
 script:
 - npm run build
-- copy electron/main.js electron/package.json dist/
+- cp electron/main.js electron/package.json dist/
 - ls -la dist/
 - npm run release
 
