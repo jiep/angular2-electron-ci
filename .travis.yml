@@ -19,6 +19,7 @@ script:
 - ls -la app/
 - npm run release
 
+
 cache:
   directories:
   - node_modules
