@@ -1,7 +1,7 @@
 {
   "name": "angular2-electron-ci",
   "version": "0.0.24",
-  "main": "main.js",
+  "main": "electron/main.js",
   "license": "MIT",
   "email": "example@example.org",
   "description": "Una prueba de Angular 2 y Electron",
