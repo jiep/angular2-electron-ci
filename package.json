@@ -14,7 +14,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "release": "electron-packager dist App --out=release --asar=true --overwrit && build"
+    "release": "electron-packager dist App --out=release --asar=true --overwrite && build"
   },
   "build": {
     "directories": {

@@ -10,6 +10,7 @@ branches:
 before_script:
 - npm install -g @angular/cli
 - npm install -g electron-builder
+- npm install -g electron-packager
 - npm install -g copy
 - npm install
 script:
