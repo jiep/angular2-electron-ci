@@ -2,12 +2,6 @@ const {app, BrowserWindow} = require('electron')
 const path = require('path');
 const url = require('url');
 
-require('dotenv').config();
-
-if (process.env.PACKAGE === 'false'){
-  require('electron-reload')(__dirname);
-}
-
 let win = null;
 
 app.on('ready', () => {
