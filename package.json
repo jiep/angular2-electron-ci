@@ -59,7 +59,7 @@
     "@types/node": "~6.0.60",
     "codelyzer": "~2.0.0",
     "copy": "0.3.0",
-    "electron": "1.6.16",
+    "electron": "1.8.2-beta5",
     "electron-builder-squirrel-windows": "19.4.2",
     "electron-reload": "1.2.1",
     "jasmine-core": "~2.5.2",
